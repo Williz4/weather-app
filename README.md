@@ -1,4 +1,4 @@
-# Mapty
+# Weather App
 
 #### Weather App, 8th December 2022
 
