@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	transition: all .3s ease-in-out;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+.container {
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 10rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	margin-left: 5rem;
+	font-size: 3rem;
+	font-family: 'Poppins';
+	font-weight: bold;
+	color: #fff;
+}
+
+.searchBox {
+	margin-right: 5rem;
+	display: flex;
+}
+
+.searchBox img {
+	width: 4rem;
+	background-color: rgba(255, 255, 255, .796);
+	border-radius: 50%;
+}
+
+.searchBox input {
+	margin-right: .8rem;
+	border-radius: 2rem;
+	outline: none;
+	border: none;
+	font-family: 'Poppins';
+	color: #fff;
+	background: #2f2f2f;
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+}
+
+.content {
+	position: absolute;
+	top: 20rem;
+	left: 10rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 50vh;
+	width: 80vw;
+}
+
+#city {
+	font-weight: 600;
+	font-size: 5rem;
+	margin-bottom: 1rem;
+}
+
+#celcius,
+#faren {
+	font-size: 6rem;
+	font-weight: bold;
+	font-family: "Poppins";
+}
+
+#temp {
+	margin-bottom: 1rem;
+}
+
+#main,
+#description,
+#timezone {
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+.details {
+	display: none;
+	background: rgba(255, 255, 255, .25);
+	box-shadow: rgb(31 38 135 / 10%) 0px .8rem 3.2rem 0px;
+	backdrop-filter: blur(.8rem);
+}
+
+#img img {
+	width: 8rem;
+	margin-bottom: 2rem;
+}
+
+.details {
+	padding: 5rem 5rem;
+	width: 37rem;
+	margin-left: 5rem;
+	height: 40rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.-detail {
+	margin-bottom: 3rem;
+	font-size: 1.8rem;
+	color: #fff;
+	font-weight: 400;
+}
+
+#error {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+
+#error h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+#error h3 {
+	font-size: 2.5rem;
+	font-weight: 200;
+}

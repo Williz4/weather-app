@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+		<title>Weather App</title>
+
+		<link rel="stylesheet" href="styles.css">
+
+	</head>
+
+	<body onload="start()">
+		
+		<div class="container">
+
+			<header>
+
+				<div class="logo">Weather App</div>
+
+				<div class="searchBox">
+
+					<input type="text" name="search" id="search" autocomplete="off" placeholder="Search City...">
+					<img src="img/search-circle.svg" alt="Search" onclick="searchCity()">
+
+				</div>
+
+			</header>
+
+			<main id="main-content">
+				
+				<div class="content">
+					
+					<div class="main-info">
+
+						<div id="city"></div>
+
+						<div id="temp">
+
+							<div id="celcius"></div>
+							<br>
+							<div id="faren"></div>
+
+						</div>
+
+						<div id="main"></div>
+						<div id="description"></div>
+						<div id="img">
+							
+							<img src="" alt="" id="icon">
+
+						</div>
+						<div id="timezone"></div>
+
+					</div>
+
+					<div id="details">
+						
+						<div class="details">
+							
+							<div class="-detail" id="country"></div>
+							<div class="-detail" id="humidity"></div>
+							<div class="-detail" id="pressure"></div>
+							<div class="-detail" id="temp-max"></div>
+							<div class="-detail" id="temp-min"></div>
+							<div class="-detail" id="wind">
+								
+								<div id="wind-speed"></div>
+								<div id="wind-deg"></div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</main>
+
+		</div>
+
+		<div id="error">
+			
+			<h1>This city doesn't <div>exist in our database!</div></h1>
+			<h3>Try another city.</h3>
+
+		</div>
+
+		<script src="script.js"></script>
+
+	</body>
+
+</html>
